@@ -6,15 +6,34 @@ $version
 
 :: StoryCaption {"position":"25,550","size":"100,100"}
 <<if def $gameStarted>>
-Credits: $player.credits
-Skill Points: $player.skillPoints
-<br><<nobr>>
-Health: <<healthBarMacro $player>>
-Stomach Capacity: <<capacityBarMacro $player "stomach">>
-<<if def $player.capacity.womb>>Womb Capacity: <<capacityBarMacro $player "womb">><</if>>
-<<if def $player.capacity.testi>>Testicle Capacity: <<capacityBarMacro $player "testi">><</if>><</nobr>>
+    <table class="Stat-table">
+        <tr><td>Credits:     </td><td>$player.credits</td></tr>
+        <tr><td>Skill Points:    </td><td>$player.skillPoints</td></tr>
+    </table>
+    Health: <<healthBarMacro $player>>
+    Stomach Capacity: <<capacityBarMacro $player "stomach">>
+    <<if def $player.capacity.womb>>Womb Capacity: <<capacityBarMacro $player "womb">><</if>>
+    <<if def $player.capacity.testi>>Testicle Capacity: <<capacityBarMacro $player "testi">><</if>>
+    <table class="Stat-table">
+        <thead><tr><th colspan="2">__Base Stats__</th></tr></thead>
+        <tbody>
+            <tr><td>Strength:       </td><td>$player.stats.strg</td></tr>
+            <tr><td>Dexterity:      </td><td>$player.stats.dex</td></tr>
+            <tr><td>Constitution:   </td><td>$player.stats.con</td></tr>
+        </tbody>
+    </table>
+    <table class="Stat-table">
+        <thead><tr><th  colspan="2">__Experience Points__</th></tr></thead>
+        <tbody>
+            <tr><td>Muscle:     </td><td>$player.exp.muscle</td></tr>
+            <tr><td>Agility:    </td><td>$player.exp.agility</td></tr>
+            <tr><td>Physique:   </td><td>$player.exp.physique</td></tr>
+            <tr><td>Size:       </td><td>$player.exp.size</td></tr>
+            <tr><td>Fat:        </td><td><<print $player.exp.fat * 100>></td></tr>
+            <tr><td>Skill:      </td><td>$player.exp.skill</td></tr>
+        </tbody>
+    </table>
 <</if>>
-
 :: StoryMenu {"position":"25,675","size":"100,100"}
 <<if def $gameStarted>>
 <<link $player.name "character">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>

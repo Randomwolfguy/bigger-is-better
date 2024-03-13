@@ -4,6 +4,8 @@
 @import "partials/buttons";
 @import "partials/moveset";
 
+$Twine-Blue: #3355aa;
+
 .flex-container {
     flex-direction: row;
     display: flex;
@@ -342,7 +344,6 @@ a.ui-button:active,
     }
 }
 
-
 /*SETTINGS SCREEN*/
 // Give the info button a little splash of color
 i.info{
@@ -355,17 +356,21 @@ i.info-letter{
 }
 
 i.info-back{
-    color: #3355aa;
+    color: $Twine-Blue;
 }
 
-//Use invisible tables to line up the settings
-table.settings-table, 
-table.settings-table tr, 
-table.settings-table td{
+table, tr, td, th{
     border: none;
 }
 
-td.settings-name{
+th
+{
+    background-color: $Twine-Blue;
+}
+
+td.settings-name,
+table.Stat-table td
+{
     min-width: 20%;
 }
 
@@ -375,4 +380,25 @@ input, select, textarea {
     background-color: #595858;
     border: 3px solid #444;
     border-radius: 5px;
+}
+
+//Moved from JS script add
+.combat-message{
+    left: 5%;
+    display: flex;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    z-index: -1;
+}
+
+.combat-message-top{
+    top: calc(100% - 1px)
+}
+
+.combat-message-bottom{
+    bottom: calc(100% - 1px)
 }
