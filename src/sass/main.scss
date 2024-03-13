@@ -24,9 +24,11 @@ td>button {
     width: 100%;
 }
 
+/*
 td>button {
     height: 100%;
 }
+*/
 
 #story-caption {
     text-align: left;
@@ -340,6 +342,9 @@ a.ui-button:active,
     }
 }
 
+
+/*SETTINGS SCREEN*/
+// Give the info button a little splash of color
 i.info{
     font-size: 2.2em;
     color: #FFF;
@@ -351,4 +356,23 @@ i.info-letter{
 
 i.info-back{
     color: #3355aa;
+}
+
+//Use invisible tables to line up the settings
+table.settings-table, 
+table.settings-table tr, 
+table.settings-table td{
+    border: none;
+}
+
+td.settings-name{
+    min-width: 20%;
+}
+
+//Make the selects a bit more noticeable
+input, select, textarea {
+    color: #eee;
+    background-color: #595858;
+    border: 3px solid #444;
+    border-radius: 5px;
 }
