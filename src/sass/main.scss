@@ -361,6 +361,7 @@ i.info-back{
 
 table, tr, td, th{
     border: none;
+    vertical-align: top;
 }
 
 th
@@ -401,4 +402,24 @@ input, select, textarea {
 
 .combat-message-bottom{
     bottom: calc(100% - 1px)
+}
+
+.consume-alert{
+    float: right;
+    color: yellow;
+    margin-left: -1em;
+}
+
+.combat-results{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    
+}
+
+.combat-results > div{
+    min-width: 40%;
 }
