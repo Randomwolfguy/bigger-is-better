@@ -1,0 +1,13 @@
+:: home {"position":"375,250"}
+<h1>Home</h1>
+<<restMessageMacro true>>
+You're home. Nothing here except you, a bed, and the mirror.
+<<if def $restText>><br/>$restText<</if>>
+<<link "Travel" "travel">><<unset $restText>><</link>>
+
+<<link "Look in the Mirror" "mirror">><</link>>
+<<link "Change Moveset" "moveset">><<unset $restText>><</link>>
+
+<<timeAction "Rest" "home" 8 0>>
+	<<restMacro true false>>
+<</timeAction>>

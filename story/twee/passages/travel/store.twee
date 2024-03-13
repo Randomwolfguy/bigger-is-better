@@ -1,0 +1,8 @@
+:: store [noreturn] {"position":"750,125"}
+<h1>$stores[$storeId].name</h1>
+
+Welcome to the $stores[$storeId].name!
+
+<<nobr>><<if def $storeText>>$storeText<</if>><</nobr>>
+<<storeItem $stores[$storeId]>>
+<<link [[Go Back|$return]]>><<unset $storeText>><</link>>

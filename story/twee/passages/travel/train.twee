@@ -1,0 +1,25 @@
+:: train [noreturn] {"position":"625,125"}
+<h1>Gym</h1>
+Welcome to the gym! Cost to use the equipment is 100 credits a session.
+
+<<nobr>>
+<<if def $trainText>>
+$trainText
+<</if>>
+<</nobr>>
+
+<<timeAction "Lift Weights" "train" 1 0>>
+	<<trainMacro "muscle" "You pumped some iron and gain " 100 1>>
+<</timeAction>>
+<<timeAction "Squat Rack""train" 1 0>>
+	<<trainMacro "size" "You went deep with deep squats and gain " 100 1>>
+<</timeAction>>
+<<timeAction "Run on Treadmill" "train" 1 0>>
+	<<trainMacro "agility" "You hauled butt and gain " 100 1>>
+<</timeAction>>
+
+<<attackSkill>>
+
+<<link [[Go Back|$return]]>>
+	<<unset $trainText>>
+<</link>>

@@ -1,0 +1,15 @@
+:: debugPassage [noreturn] {"position":"375,125"}
+<<script>>console.log(convertToLargerUnits(State.variables.player.measurements, State.variables.imperial))<</script>>
+<<devMacro>>
+
+<<button "Data Editor" "dataEditor">><</button>>
+
+<<button "Passage Previewer" "passagePreviewer">><</button>>
+
+<<button "Quick Calc" "qCalc">><</button>>
+
+<<button "Character Gen" "charGen">><</button>>
+
+<<link "Return" $menuReturn>>
+<<unset $menuReturn $skillText>>
+<</link>>

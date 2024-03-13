@@ -1,0 +1,113 @@
+sugarcube-2:
+  macros:
+    combatWidget:
+      name: combatWidget
+    initStats:
+      name: initStats
+    initEnemy:
+      name: initEnemy
+    initItems:
+      name: initItems
+    initLoot:
+      name: initLoot
+    debugCharacter:
+      name: debugCharacter
+    testMacro:
+      name: testMacro
+    consumeEnemy:
+      name: consumeEnemy
+    combatReset:
+      name: combatReset
+    storeItem:
+      name: storeItem
+    storeWidget:
+      name: storeWidget
+    invMacro:
+      name: invMacro
+    restMacro:
+      name: restMacro
+    trainMacro:
+      name: trainMacro
+    timeAction:
+      name: timeAction
+      container: true
+    attackAction:
+      name: attackAction
+    skillsMacro:
+      name: skillsMacro
+    genderDropdownMacro:
+      name: genderDropdownMacro
+    startGameRoutine:
+      name: startGameRoutine
+    enemyMacro:
+      name: enemyMacro
+    healthBarMacro:
+      name: healthBarMacro
+    leaveButtonMacro:
+      name: leaveButtonMacro
+      container: true
+    playerFluffMacro:
+      name: playerFluffMacro
+    capacityBarMacro:
+      name: capacityBarMacro
+    clockMacro:
+      name: clockMacro
+    bugMacro:
+      name: bugMacro
+    attackSkillsMacro:
+      name: attackSkillsMacro
+    tabMacro:
+      name: tabMacro
+    movesetMacro:
+      name: movesetMacro
+    cityMacro:
+      name: cityMacro
+    consumeMacro:
+      name: consumeMacro
+    attackSkill:
+      name: attackSkill
+    devMacro:
+      name: devMacro
+    dataEditorMacro:
+      name: dataEditorMacro
+    passagePreviewerMacro:
+      name: passagePreviewerMacro
+    restMessageMacro:
+      name: restMessageMacro
+    creditMacro:
+      name: creditMacro
+    statsMacro:
+      name: statsMacro
+    measurementsMacro:
+      name: measurementsMacro
+    playerActionsMacro:
+      name: playerActionsMacro
+    combatMessageMacro:
+      name: combatMessageMacro
+    enemyDifficultyMacro:
+      name: enemyDifficultyMacro
+    statusDisplayMacro:
+      name: statusDisplayMacro
+    enemyDescriptionMacro:
+      name: enemyDescriptionMacro
+    lexicalMacro:
+      name: lexicalMacro
+    progressiveText:
+      name: progressiveText
+      container: true
+    nextText:
+      name: nextText
+    genCharMacro:
+      name: genCharMacro
+    tempData:
+      name: tempData
+    GenWingMacro:
+      name: GenWingMacro
+    AttributeControls:
+      name: AttributeControls
+    AttributeBuy:
+      name: AttributeBuy
+    TransferenceControls:
+      name: TransferenceControls
+    TransferenceBuy:
+      name: TransferenceBuy

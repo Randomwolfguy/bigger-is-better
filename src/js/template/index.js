@@ -1,0 +1,1 @@
+import CharacterTemplates from './character'

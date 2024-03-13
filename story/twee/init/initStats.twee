@@ -1,0 +1,10 @@
+:: initStats [nobr widget] {"position":"125,0"}
+<<widget "initStats">>
+	<<set $player to {
+		name: "Min",
+		species: "Dragon",
+		gender: "Futa",
+		size: "Average",
+		pronouns: "shi / hir / hirs / hirself"
+	}>>
+<</widget>>
