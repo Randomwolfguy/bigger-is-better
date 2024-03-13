@@ -26,10 +26,10 @@ Time: <<listbox "$settings.units.twelveHour" autoselect>>
 	<<option "12 Hour" true>>
 	<<option "24 Hour" false>>
 <</listbox>>
-Hyper EXP Mode <<script>>infoBubble("Increases experience gain by 4x from fights.").appendTo(this.output);<</script>>: <<listbox "$settings.tweak.hyperMode" autoselect>>
+Hyper EXP Mode : <<listbox "$settings.tweak.hyperMode" autoselect>>
 	<<option "On" true>>
 	<<option "Off" false>>
-<</listbox>>
+<</listbox>> <<script>>infoBubble("Increases experience gain by 4x from fights.").appendTo(this.output);<</script>>
 
 <<button "Next" "welcome">><</button>>
 
