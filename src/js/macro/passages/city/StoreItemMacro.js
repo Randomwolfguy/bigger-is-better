@@ -14,7 +14,7 @@ Macro.add('storeItem', {
         
         let $table = $('<table/>').addClass('storeTable');
         let $wrapper = $('<span/>')
-        let tableData = [['Item','Quantity','Price', '', '']]
+        let tableData = [['Item','Description','Quantity','Price', '', '']]
         storeStock.forEach(function (item, idx) {
             tableData.push([item.id,item.qty,item.price, idx])
         })
@@ -23,6 +23,7 @@ Macro.add('storeItem', {
             var $row = $('<tr/>')
             if (rowIndex > 0) {
                 $row.append($('<td/>').wiki(getItemInfoByIndex(r[0]).name))
+                $row.append($('<td/>').wiki(getItemInfoByIndex(r[0]).desc))
                 $row.append($('<td/>').wiki(r[1]))
                 $row.append($('<td/>').wiki(r[2]))
                 //Single buy button

@@ -9,7 +9,7 @@ Macro.add('invMacro', {
         
         let $table = $('<table/>').addClass('inventoryTable');
         let $wrapper = $('<span/>')
-        let tableData = [['Item','Stat','Modifier','Quantity','','']]
+        let tableData = [['Item','Description','Quantity','','']]
         inventory.forEach(function (item, idx) {
             tableData.push([getItemInfoByIndex(item.id), item.qty, idx])
         })
@@ -18,8 +18,7 @@ Macro.add('invMacro', {
             var $row = $('<tr/>')
             if (rowIndex > 0) {
                 $row.append($('<td/>').wiki(r[0].name))
-                $row.append($('<td/>').wiki(returnStatName(r[0].stat)))
-                $row.append($('<td/>').wiki((r[0].mod % 1 == 0)?r[0].mod:r[0].mod*100)) //Modifier
+                $row.append($('<td/>').wiki((r[0].desc)))
                 $row.append($('<td/>').wiki(r[1])) //Quantity
                 
                 //Single use button 
