@@ -7,10 +7,10 @@ $version
 :: StoryCaption {"position":"25,550","size":"100,100"}
 <<if def $gameStarted>>
     <table class="Stat-table">
-        <tr><td>Credits:     </td><td>$player.credits</td></tr>
-        <tr><td>Skill Points:    </td><td>$player.skillPoints</td></tr>
+        <tr><td style="width: 2em;"><svg class="inline-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-multiple</title><path d="M15 4A8 8 0 1 1 7 12A8 8 0 0 1 15 4M3 12A6 6 0 0 0 7 17.65V19.74A8 8 0 0 1 7 4.26V6.35A6 6 0 0 0 3 12Z" /></svg></td><td>Credits:     </td><td>$player.credits</td></tr>
+        <tr><td style="width: 2em;"><svg class="inline-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>school</title><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" /></svg></td><td>Skill Points:    </td><td>$player.skillPoints</td></tr>
     </table>
-    Health: <<healthBarMacro $player>>
+    <svg class="inline-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>heart</title><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" /></svg> Health: <<healthBarMacro $player>>
     Stomach Capacity: <<capacityBarMacro $player "stomach">>
     <<if def $player.capacity.womb>>Womb Capacity: <<capacityBarMacro $player "womb">><</if>>
     <<if def $player.capacity.testi>>Testicle Capacity: <<capacityBarMacro $player "testi">><</if>>
