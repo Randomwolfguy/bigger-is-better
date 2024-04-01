@@ -15,31 +15,31 @@ $version
     <<if def $player.capacity.womb>>Womb Capacity: <<capacityBarMacro $player "womb">><</if>>
     <<if def $player.capacity.testi>>Testicle Capacity: <<capacityBarMacro $player "testi">><</if>>
     <table class="Stat-table">
-        <thead><tr><th colspan="2">__Base Stats__</th></tr></thead>
+        <thead><tr><th colspan="3">__Base Stats__</th></tr></thead>
         <tbody>
-            <tr><td>Strength:       </td><td>$player.stats.strg</td></tr>
-            <tr><td>Dexterity:      </td><td>$player.stats.dex</td></tr>
-            <tr><td>Constitution:   </td><td>$player.stats.con</td></tr>
+            <tr><td><svg class="inline-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>dumbbell</title><path d="M20.57,14.86L22,13.43L20.57,12L17,15.57L8.43,7L12,3.43L10.57,2L9.14,3.43L7.71,2L5.57,4.14L4.14,2.71L2.71,4.14L4.14,5.57L2,7.71L3.43,9.14L2,10.57L3.43,12L7,8.43L15.57,17L12,20.57L13.43,22L14.86,20.57L16.29,22L18.43,19.86L19.86,21.29L21.29,19.86L19.86,18.43L22,16.29L20.57,14.86Z" /></svg></td><td> Strength:       </td><td>$player.stats.strg</td></tr>
+            <tr><td><svg class="inline-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>run-fast</title><path d="M16.5,5.5A2,2 0 0,0 18.5,3.5A2,2 0 0,0 16.5,1.5A2,2 0 0,0 14.5,3.5A2,2 0 0,0 16.5,5.5M12.9,19.4L13.9,15L16,17V23H18V15.5L15.9,13.5L16.5,10.5C17.89,12.09 19.89,13 22,13V11C20.24,11.03 18.6,10.11 17.7,8.6L16.7,7C16.34,6.4 15.7,6 15,6C14.7,6 14.5,6.1 14.2,6.1L9,8.3V13H11V9.6L12.8,8.9L11.2,17L6.3,16L5.9,18L12.9,19.4M4,9A1,1 0 0,1 3,8A1,1 0 0,1 4,7H7V9H4M5,5A1,1 0 0,1 4,4A1,1 0 0,1 5,3H10V5H5M3,13A1,1 0 0,1 2,12A1,1 0 0,1 3,11H7V13H3Z" /></svg></td><td> Dexterity:      </td><td>$player.stats.dex</td></tr>
+            <tr><td><svg class="inline-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>wall</title><path d="M3,16H12V21H3V16M2,10H8V15H2V10M9,10H15V15H9V10M16,10H22V15H16V10M13,16H21V21H13V16M3,4H11V9H3V4M12,4H21V9H12V4Z" /></svg></td><td> Constitution:   </td><td>$player.stats.con</td></tr>
         </tbody>
     </table>
     <table class="Stat-table">
         <thead><tr><th  colspan="2">__Experience Points__</th></tr></thead>
         <tbody>
-            <tr><td>Muscle:     </td><td>$player.exp.muscle</td></tr>
-            <tr><td>Agility:    </td><td>$player.exp.agility</td></tr>
-            <tr><td>Physique:   </td><td>$player.exp.physique</td></tr>
-            <tr><td>Size:       </td><td>$player.exp.size</td></tr>
+            <tr><td>Muscle:     </td><td><<expBarMacro $player "left" "muscle">></td></tr>
+            <tr><td>Agility:    </td><td><<expBarMacro $player "left" "agility">></td></tr>
+            <tr><td>Physique:   </td><td><<expBarMacro $player "left" "physique">></td></tr>
+            <tr><td>Size:       </td><td><<expBarMacro $player "left" "size">></td></tr>
             <tr><td>Fat:        </td><td><<print $player.exp.fat * 100>></td></tr>
             <tr><td>Skill:      </td><td>$player.exp.skill</td></tr>
         </tbody>
     </table>
 <</if>>
 :: StoryMenu {"position":"25,675","size":"100,100"}
-<<if def $gameStarted>>
-<<link $player.name "character">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>
-<<link "Inventory" "inv">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>
-<<link "Settings" "settings">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>
-<<if $debug>><<link "Dev" "debugPassage">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>><</if>>
-<</if>>
-<<link "Credits" "credits">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>
-<<link "Help" "help">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>
+<<if def $gameStarted>>\
+<<link $player.name "character">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>\
+<<link "Inventory" "inv">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>\
+<<link "Settings" "settings">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>\
+<<if $debug>><<link "Dev" "debugPassage">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>><</if>>\
+<</if>>\
+<<link "Credits" "credits">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>\
+<<link "Help" "help">><<if ndef $menuReturn>><<set $menuReturn to passage()>><</if>><</link>>\

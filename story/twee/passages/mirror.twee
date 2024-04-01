@@ -4,5 +4,6 @@
 You look at yourself in the mirror...
 /* General Description */
 <<playerFluffMacro>>
-
+<div class="travel-link">
 <<link "Return" $return>><</link>>
+</div>

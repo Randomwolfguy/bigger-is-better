@@ -27,5 +27,6 @@ Looking at the helmet you notice the tube leading from the top and going into th
     </div>
 </div>
 <</nobr>>
-
+<div class="travel-link">
 <<link "Return to Lobby" $return>><</link>>
+</div>

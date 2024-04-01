@@ -57,4 +57,6 @@
 		</td>
 	</tr>
 </table>
+<div class="travel-link">
 <<link "Return" $menuReturn>><<unset $menuReturn>><</link>>
+</div>

@@ -9,7 +9,8 @@
 <<button "Quick Calc" "qCalc">><</button>>
 
 <<button "Character Gen" "charGen">><</button>>
-
+<div class="travel-link">
 <<link "Return" $menuReturn>>
 <<unset $menuReturn $skillText>>
 <</link>>
+</div>

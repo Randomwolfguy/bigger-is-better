@@ -25,4 +25,6 @@ In the corner of the room you see what can only be descriped as a blood pressure
     <<AttributeBuy>>
 </div>
 <</nobr>>
+<div class="travel-link">
 <<link "Return to Lobby" $return>><</link>>
+</div>

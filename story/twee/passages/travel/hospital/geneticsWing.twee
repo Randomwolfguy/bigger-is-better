@@ -10,4 +10,6 @@ Ominous.
 Anyway what's the worst that could happen, nothing?
 
 <<GenWingMacro>>
+<div class="travel-link">
 <<link "Return to Lobby" $return>><</link>>
+</div>

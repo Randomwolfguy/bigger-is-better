@@ -5,4 +5,6 @@ Welcome to the $stores[$storeId].name!
 
 <<nobr>><<if def $storeText>>$storeText<</if>><</nobr>>
 <<storeItem $stores[$storeId]>>
+<div class="travel-link">
 <<link [[Go Back|$return]]>><<unset $storeText>><</link>>
+</div>

@@ -73,4 +73,6 @@ Prey capacity amounts are as follows:
 <table>
     <tr><td>''Credits''</td><td>Current amount of credits you have.</td></tr>
 </table>
+<div class="travel-link">
 <<link "Return" $menuReturn>><<unset $menuReturn>><</link>>
+</div>

@@ -6,6 +6,7 @@ Thank you to everyone that's provided feedback and encouragement!
 Contributing Writer Credits:
 <<creditMacro>>
 And thanks to you, the player! I hope you have enjoyed/will enjoy the game!
-
+<div class="travel-link">
 <<link "Bug Report" "bugReport">><</link>>
 <<link "Return" $menuReturn>><<unset $menuReturn>><</link>>
+</div>

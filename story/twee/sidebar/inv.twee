@@ -3,4 +3,6 @@
 
 <<nobr>><<if def $invText>>$invText<</if>><</nobr>>
 <<invMacro>>
+<div class="travel-link">
 <<link "Return" $menuReturn>><<unset $menuReturn $invText>><</link>>
+</div>

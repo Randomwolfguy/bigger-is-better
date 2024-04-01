@@ -8,9 +8,11 @@
     <</if>>
 <</nobr>>
 <<restMessageMacro>>
+<div class="travel-link">
 <<timeAction "Look for Trouble" "fight" 0 30>><<enemyMacro 0 2 "Micro Metroplex - Alleyway">><<unset $consumeText>><</timeAction>>
 
 <<link "Micro Muscle Gym" "train">><<unset $consumeText>><</link>>
 <<link "Store" "store">><<set $storeId to 0>><<unset $consumeText>><</link>>
 
 <<timeAction "Go Back to the Station" "travel" 2 0 "Micro Metroplex - Alleyway">><<unset $consumeText>><</timeAction>>
+</div>

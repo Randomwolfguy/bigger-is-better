@@ -361,7 +361,7 @@ i.info-back{
 
 table, tr, td, th{
     border: none;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 th
@@ -431,4 +431,46 @@ input, select, textarea {
 
 .trans-exchange{
     justify-content: space-evenly;
+}
+
+//Icons are from Material design icons https://pictogrammers.com/library/mdi/
+.inline-icon{
+    height: 1.5em;
+    width: 1.5em;
+    fill: white;
+    background: none;
+}
+
+.travel-link{
+    max-width: 50%;
+}
+
+.travel-link a, .travel-link button{
+    display: block;
+    background: #3355aa;
+    padding: .4em;
+    border: 1px solid #57c;
+    color: white;
+    text-align: center;
+}
+
+.travel-link button span{
+    margin-top: 0.25em;
+    display: block;
+    padding-left: 2em;
+}
+
+.travel-link a:hover, .travel-link button:hover{
+    background-color: #57c;
+    border-color: #79e;
+}
+
+.travel-link svg{
+    float: left;
+}
+
+.inline-icon-overlay{
+    position: relative;
+    top: 0.5em;
+    left: 0.5em;
 }
