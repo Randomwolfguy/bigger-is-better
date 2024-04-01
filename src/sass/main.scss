@@ -367,6 +367,8 @@ table, tr, td, th{
 th
 {
     background-color: $Twine-Blue;
+    padding-left: 0.4em;
+    padding-bottom: 0.2em;
 }
 
 td.settings-name,
@@ -405,11 +407,23 @@ input, select, textarea {
     bottom: calc(100% - 1px)
 }
 
+
+@keyframes Blinking {
+    from {
+        display:block;
+    }
+
+    to{
+        display:none;
+    }
+}
 .consume-alert{
     float: right;
     color: yellow;
     margin-left: -1em;
+    animation: Blinking 1s alternate ease-in-out infinite;
 }
+
 
 .combat-results{
     display: flex;
@@ -445,9 +459,11 @@ input, select, textarea {
     max-width: 50%;
 }
 
-.travel-link a, .travel-link button{
+.travel-link a, 
+.travel-link button,
+#menu-core li{
     display: block;
-    background: #3355aa;
+    background: $Twine-Blue;
     padding: .4em;
     border: 1px solid #57c;
     color: white;
@@ -460,9 +476,16 @@ input, select, textarea {
     padding-left: 2em;
 }
 
-.travel-link a:hover, .travel-link button:hover{
+.travel-link a:hover, 
+.travel-link button:hover,
+#menu-core li:hover,
+#menu li a:hover{
     background-color: #57c;
     border-color: #79e;
+}
+
+#menu li a:hover{
+    border:none;
 }
 
 .travel-link svg{
