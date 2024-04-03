@@ -56,5 +56,6 @@ Size effects your starting stats, smaller characters will have a harder time sta
 		</td>
 	</tr>
 </table>
-<<button "Next" "welcome">><</button>>
-
+<div class="travel-link">\
+	<<button "Next" "welcome">><</button>>\
+</div>\

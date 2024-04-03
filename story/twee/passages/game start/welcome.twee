@@ -9,7 +9,7 @@ Having just moved to the area you're unsure what you may find. Are the residents
 
 As you arrive at the station,  */
 <div class="travel-link">
-<<link "Start Game" "home">>
-	<<set $gameStarted to true>>
-<</link>>
+	<<link "Start Game" "home">>
+		<<set $gameStarted to true>>
+	<</link>>
 </div>

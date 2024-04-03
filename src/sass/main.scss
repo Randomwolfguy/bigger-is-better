@@ -308,9 +308,12 @@ a.ui-button:active,
 
 .creditWrapper {
     $this: &;
-    max-width: 150px;
-    max-height: 150px;
+    width: 150px;
+    height: 150px;
     position: relative;
+    float:left;
+    margin: 0.5em;
+    text-align: center;
     &:hover {
         cursor: pointer;
     }
@@ -326,8 +329,9 @@ a.ui-button:active,
     background: #4e4c4cb9;
     visibility: hidden;
     position: absolute;
-    line-height: 150px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .creditImg {
@@ -377,6 +381,13 @@ table.Stat-table td
     min-width: 20%;
 }
 
+td.settings-value input, 
+td.settings-value select
+{
+    min-width: 50%;
+}
+
+
 //Make the selects a bit more noticeable
 input, select, textarea {
     color: #eee;
@@ -408,20 +419,20 @@ input, select, textarea {
 }
 
 
-@keyframes Blinking {
+@keyframes BlinkingAlert {
     from {
-        display:block;
+        color: rgba(255, 255, 0, 0);
     }
 
     to{
-        display:none;
+        color: rgb(255, 255, 0);
     }
 }
 .consume-alert{
     float: right;
     color: yellow;
     margin-left: -1em;
-    animation: Blinking 1s alternate ease-in-out infinite;
+    animation: BlinkingAlert 1s alternate ease-in-out infinite;
 }
 
 
@@ -443,6 +454,14 @@ input, select, textarea {
     width: 100%;
 }
 
+.half-width{
+    max-width: 50%;
+}
+
+.clear-both{
+    clear:both;
+}
+
 .trans-exchange{
     justify-content: space-evenly;
 }
@@ -453,6 +472,13 @@ input, select, textarea {
     width: 1.5em;
     fill: white;
     background: none;
+}
+
+//Allows for an icon to be place on top of something if it's in an enclosing DIV, apply to icon itself
+.inline-icon-overlay{
+    position: relative;
+    top: 0.5em;
+    left: 0.5em;
 }
 
 .travel-link{
@@ -490,10 +516,4 @@ input, select, textarea {
 
 .travel-link svg{
     float: left;
-}
-
-.inline-icon-overlay{
-    position: relative;
-    top: 0.5em;
-    left: 0.5em;
 }
